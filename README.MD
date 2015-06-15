@@ -14,6 +14,8 @@ The version will be user defined, and if its not defined the plugin will generat
 USAGE
 =====
 
+You have to define the execution like the example below, the default phase of the plugin is process-resources.
+
 	<build>
 		<plugins>
 			...
@@ -33,3 +35,8 @@ USAGE
 			...
 		</plugins>
 	</build>
+
+By default the plugin will copy the output of the execution to ${project.build.directory}/temp
+
+PARAMETERS
+==========
