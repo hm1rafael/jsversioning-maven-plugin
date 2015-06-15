@@ -11,8 +11,7 @@ This plugin will change to:
 
 The version will be user defined, and if its not defined the plugin will generate a random UUID.
 
-USAGE
-=====
+###USAGE
 
 You have to define the execution like the example below, the default phase of the plugin is process-resources.
 
@@ -38,9 +37,7 @@ You have to define the execution like the example below, the default phase of th
 
 By default the plugin will copy the output of the execution to ${project.build.directory}/temp
 
-PARAMETERS
-==========
-
+###PARAMETERS
 
 **webFilesDirectory** (*Default value = ${basedir}/src/main/webapp*): Where the plugin is will look for the script tags.
 
@@ -48,7 +45,6 @@ PARAMETERS
 
 **version**: If the user wants to use a specific version on the scripts.
 
-MAVEN-CENTRAL
-=============
+###MAVEN-CENTRAL
 
 In the works 
