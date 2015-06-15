@@ -1,4 +1,4 @@
-package br.com.softplan.unj;
+package com.github.hm1rafael;
 
 import java.io.File;
 import java.io.IOException;
@@ -12,7 +12,7 @@ import org.apache.maven.plugins.annotations.Mojo;
 import org.apache.maven.plugins.annotations.Parameter;
 import org.codehaus.plexus.util.DirectoryScanner;
 
-import br.com.softplan.unj.process.ProcessWebFiles;
+import com.github.hm1rafael.process.ProcessWebFiles;
 
 @Mojo(
 	name = "versioning",
