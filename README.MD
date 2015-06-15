@@ -42,6 +42,6 @@ PARAMETERS
 ==========
 
 
-	webFilesDirectory (Default value = ${basedir}/src/main/webapp): Where the plugin is will look for the script tags.
-	webappOutputDirectory (Default value = ${project.build.directory}/temp): The output folder.
-	version: If the user wants to use a specific version on the scripts.
+	**webFilesDirectory** (*Default value = ${basedir}/src/main/webapp*): Where the plugin is will look for the script tags.
+	**webappOutputDirectory** (*Default value = ${project.build.directory}/temp*): The output folder of the execution.
+	**version**: If the user wants to use a specific version on the scripts.
