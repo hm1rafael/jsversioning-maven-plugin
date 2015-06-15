@@ -40,3 +40,8 @@ By default the plugin will copy the output of the execution to ${project.build.d
 
 PARAMETERS
 ==========
+
+
+	webFilesDirectory (Default value = ${basedir}/src/main/webapp): Where the plugin is will look for the script tags.
+	webappOutputDirectory (Default value = ${project.build.directory}/temp): The output folder.
+	version: If the user wants to use a specific version on the scripts.
