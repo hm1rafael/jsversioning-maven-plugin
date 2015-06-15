@@ -7,7 +7,7 @@ You have something like this defined in your webapps files:
 
 This plugin will change to:
 
-		<script language="javascript" type="text/JavaScript" src="script.js?n="version""></script>
+		<script language="javascript" type="text/JavaScript" src="script.js?n=version"></script>
 
 The version will be user defined, and if its not defined the plugin will generate a random UUID.
 
@@ -47,3 +47,8 @@ PARAMETERS
 **webappOutputDirectory** (*Default value = ${project.build.directory}/temp*): The output folder of the execution.
 
 **version**: If the user wants to use a specific version on the scripts.
+
+MAVEN-CENTRAL
+=============
+
+In the works 
