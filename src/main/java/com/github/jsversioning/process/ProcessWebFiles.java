@@ -15,6 +15,13 @@ public class ProcessWebFiles {
 		this.version = version;
 	}
 
+	/**
+	 * Just iterates the files and send to the {@code ScriptTagProcessor} to do the heavy work
+	 * TODO: Add logic to ignore directories, files and specific extensions
+	 * 
+	 * @param webFilesPaths
+	 * @throws IOException
+	 */
 	public void process(String[] webFilesPaths) throws IOException {
 		ScriptTagProcessor scriptTagProcessor = new ScriptTagProcessor(this.webFilesDirectory, this.webAppOutputDirectory, this.version);
 		for (String webFilePath : webFilesPaths) {

@@ -24,6 +24,12 @@ class ScriptTagProcessor {
 		}
 	}
 
+	/**
+	 * Iterate the files, finds the scripts tags and change the name of the script
+	 * 
+	 * @param webFileRelativePath
+	 * @throws IOException
+	 */
 	public void processScriptTags(String webFileRelativePath) throws IOException {
 		String probablyHtmlFileText = FileUtils.readFileToString(new File(this.webFilesDirectory, webFileRelativePath));
 		Matcher matcher = this.pattern.matcher(probablyHtmlFileText);

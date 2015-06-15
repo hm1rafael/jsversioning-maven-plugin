@@ -1,10 +1,19 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>com.github.hm1rafael</groupId>
+	<groupId>com.github.jsversioning</groupId>
 	<artifactId>jsversioning-maven-plugin</artifactId>
 	<version>0.0.1</version>
 	<packaging>maven-plugin</packaging>
+	<description>Javascript versioning plugin.</description>
+	<url>https://github.com/hm1rafael/jsversioning-maven-plugin</url>
+
+	<developers>
+		<developer>
+			<name>Rafael Oliveira de Mattos</name>
+			<url>https://github.com/hm1rafael</url>
+		</developer>
+	</developers>
 
 	<licenses>
 		<license>

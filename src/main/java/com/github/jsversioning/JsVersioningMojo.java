@@ -13,6 +13,11 @@ import org.codehaus.plexus.util.DirectoryScanner;
 
 import com.github.jsversioning.process.ProcessWebFiles;
 
+/**
+ * Main mojo
+ * 
+ * @author rafaelmattos
+ */
 @Mojo(
 	name = "versioning",
 	defaultPhase = LifecyclePhase.PROCESS_RESOURCES,
