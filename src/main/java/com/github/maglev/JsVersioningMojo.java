@@ -1,4 +1,4 @@
-package com.github.hm1rafael;
+package com.github.maglev;
 
 import java.io.File;
 import java.io.IOException;
@@ -11,7 +11,7 @@ import org.apache.maven.plugins.annotations.Mojo;
 import org.apache.maven.plugins.annotations.Parameter;
 import org.codehaus.plexus.util.DirectoryScanner;
 
-import com.github.hm1rafael.process.ProcessWebFiles;
+import com.github.maglev.process.ProcessWebFiles;
 
 @Mojo(
 	name = "versioning",

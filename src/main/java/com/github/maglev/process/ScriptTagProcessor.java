@@ -1,4 +1,4 @@
-package com.github.hm1rafael.process;
+package com.github.maglev.process;
 
 import java.io.File;
 import java.io.IOException;
