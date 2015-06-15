@@ -25,13 +25,16 @@ public class JsVersioningMojo extends AbstractMojo {
 	@Parameter(defaultValue = "${project.build.directory}/temp", required = true)
 	private File webappOutputDirectory;
 
+	@Parameter(required = false)
+	private String version;
+
 	@Override
 	public void execute() throws MojoExecutionException, MojoFailureException {
 		if (!this.webappOutputDirectory.exists()) {
 			this.webappOutputDirectory.mkdirs();
 		}
 		String[] webFiles = getWebFiles();
-		ProcessWebFiles processWebFiles = new ProcessWebFiles(this.webFilesDirectory, this.webappOutputDirectory);
+		ProcessWebFiles processWebFiles = new ProcessWebFiles(this.webFilesDirectory, this.webappOutputDirectory, this.version);
 		processFiles(webFiles, processWebFiles);
 	}
 

@@ -11,22 +11,24 @@ import org.apache.commons.io.FileUtils;
 class ScriptTagProcessor {
 
 	private Pattern pattern;
-	private String randomUUID;
+	private String version;
 	private File webFilesDirectory;
 	private File webAppOutputDirectory;
 
-	public ScriptTagProcessor(File webFilesDirectory, File webAppOutputDirectory) {
+	public ScriptTagProcessor(File webFilesDirectory, File webAppOutputDirectory, String version) {
 		this.pattern = Pattern.compile("(\\w*.js)\"");
-		this.randomUUID = UUID.randomUUID().toString();
 		this.webFilesDirectory = webFilesDirectory;
 		this.webAppOutputDirectory = webAppOutputDirectory;
+		if (version == null || "".equals(version.trim())) {
+			this.version = UUID.randomUUID().toString();
+		}
 	}
 
 	public void processScriptTags(String webFileRelativePath) throws IOException {
 		String probablyHtmlFileText = FileUtils.readFileToString(new File(this.webFilesDirectory, webFileRelativePath));
 		Matcher matcher = this.pattern.matcher(probablyHtmlFileText);
 		while (matcher.find()) {
-			probablyHtmlFileText = matcher.replaceAll("$1?n=" + this.randomUUID + "\"");
+			probablyHtmlFileText = matcher.replaceAll("$1?n=" + this.version + "\"");
 		}
 		File file = new File(this.webAppOutputDirectory, webFileRelativePath);
 		FileUtils.writeStringToFile(file, probablyHtmlFileText);
