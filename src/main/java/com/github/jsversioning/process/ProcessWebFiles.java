@@ -1,4 +1,4 @@
-package com.github.maglev.process;
+package com.github.jsversioning.process;
 
 import java.io.File;
 import java.io.IOException;
