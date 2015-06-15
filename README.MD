@@ -39,7 +39,7 @@ By default the plugin will copy the output of the execution to ${project.build.d
 
 ###PARAMETERS
 
-**webFilesDirectory** (*Default value = ${basedir}/src/main/webapp*): Where the plugin is will look for the script tags.
+**webFilesDirectory** (*Default value = ${basedir}/src/main/webapp*): Where the plugin will look for the script tags.
 
 **webappOutputDirectory** (*Default value = ${project.build.directory}/temp*): The output folder of the execution.
 
