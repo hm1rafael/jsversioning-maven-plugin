@@ -2,14 +2,13 @@ package com.github.hm1rafael.process;
 
 import java.io.File;
 import java.io.IOException;
-import java.util.Collection;
 
 public class ProcessWebFiles {
 
 	private File webFilesDirectory;
 	private File webAppOutputDirectory;
 
-	public ProcessWebFiles(File webFilesDirectory, File webAppOutputDirectory, Collection<File> directoriesToIgnore) {
+	public ProcessWebFiles(File webFilesDirectory, File webAppOutputDirectory) {
 		this.webFilesDirectory = webFilesDirectory;
 		this.webAppOutputDirectory = webAppOutputDirectory;
 	}

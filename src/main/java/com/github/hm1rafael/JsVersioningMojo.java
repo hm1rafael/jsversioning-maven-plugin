@@ -2,7 +2,6 @@ package com.github.hm1rafael;
 
 import java.io.File;
 import java.io.IOException;
-import java.util.Collection;
 
 import org.apache.maven.plugin.AbstractMojo;
 import org.apache.maven.plugin.MojoExecutionException;
@@ -26,16 +25,13 @@ public class JsVersioningMojo extends AbstractMojo {
 	@Parameter(defaultValue = "${project.build.directory}/temp", required = true)
 	private File webappOutputDirectory;
 
-	@Parameter(required = false)
-	private Collection<File> directoriesToIgnore;
-
 	@Override
 	public void execute() throws MojoExecutionException, MojoFailureException {
 		if (!this.webappOutputDirectory.exists()) {
 			this.webappOutputDirectory.mkdirs();
 		}
 		String[] webFiles = getWebFiles();
-		ProcessWebFiles processWebFiles = new ProcessWebFiles(this.webFilesDirectory, this.webappOutputDirectory, this.directoriesToIgnore);
+		ProcessWebFiles processWebFiles = new ProcessWebFiles(this.webFilesDirectory, this.webappOutputDirectory);
 		processFiles(webFiles, processWebFiles);
 	}
 
