@@ -15,7 +15,7 @@ import com.github.jsversioning.process.ProcessWebFiles;
 
 /**
  * Main mojo
- * 
+ *
  * @author rafaelmattos
  */
 @Mojo(
