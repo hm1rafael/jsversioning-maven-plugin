@@ -1,4 +1,4 @@
-package com.github.jsversioning.process;
+package com.github.hm1rafael.jsversioning.process;
 
 import java.io.File;
 import java.io.IOException;

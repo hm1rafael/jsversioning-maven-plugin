@@ -1,4 +1,4 @@
-package com.github.jsversioning;
+package com.github.hm1rafael.jsversioning;
 
 import java.io.File;
 import java.io.IOException;
@@ -11,17 +11,14 @@ import org.apache.maven.plugins.annotations.Mojo;
 import org.apache.maven.plugins.annotations.Parameter;
 import org.codehaus.plexus.util.DirectoryScanner;
 
-import com.github.jsversioning.process.ProcessWebFiles;
+import com.github.hm1rafael.jsversioning.process.ProcessWebFiles;
 
 /**
  * Main mojo
  *
  * @author rafaelmattos
  */
-@Mojo(
-	name = "versioning",
-	defaultPhase = LifecyclePhase.PROCESS_RESOURCES,
-	threadSafe = true)
+@Mojo(name = "versioning", defaultPhase = LifecyclePhase.PROCESS_RESOURCES, threadSafe = true)
 public class JsVersioningMojo extends AbstractMojo {
 
 	@Parameter(defaultValue = "${basedir}/src/main/webapp", required = true)
